@@ -5,6 +5,7 @@ task :console do
   sh 'pry -r ./init.rb'
 end
 
+# TODO: change below values to our codebase
 USERNAME = 'soumyaray'
 IMAGE = 'codepraise-clone_notifier'
 VERSION = '0.1.0'
