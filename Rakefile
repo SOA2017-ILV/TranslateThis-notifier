@@ -5,11 +5,10 @@ task :console do
   sh 'pry -r ./init.rb'
 end
 
-# TODO: change below values to our codebase
-USERNAME = 'soumyaray'
-IMAGE = 'codepraise-clone_notifier'
+USERNAME = 'ismaelnoble'
+IMAGE = 'translatethis-notifier'
 VERSION = '0.1.0'
-WORKER_APP = 'ruby application/clone_notifier.rb'
+WORKER_APP = 'ruby application/load_notifier.rb'
 
 desc 'Build Docker image'
 task :worker do

@@ -12,3 +12,6 @@ gem 'aws-sdk-sqs', '~> 1'
 # Representers
 gem 'multi_json'
 gem 'roar'
+
+# Email
+gem 'sendgrid-ruby'
