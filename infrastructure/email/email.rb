@@ -8,15 +8,13 @@ module TranslateThis
     ## Email wrapper for Sendgrid
     # Requires: sendgrid api credentials in ENV or through config file
     class Mailer
-      GROUP_ID = 'TranslateThis_api'
-      IDLE_TIMEOUT = 5 # seconds
-
       def initialize(config)
         @config = config
         @email = SendGrid::API.new(api_key: @config)
       end
 
       def send(message)
+        # TODO: change recipients to read from a yaml file rather than hard code
         recipients = ['ismaelnoble@gmail.com', 'roli.s91@gmail.com',
                       'roblescoulter@gmail.com']
         from = Email.new(email: 'notifier@translatethis.io')
